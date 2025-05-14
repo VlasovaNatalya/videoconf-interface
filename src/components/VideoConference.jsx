@@ -7,8 +7,10 @@ function VideoConference() {
   return (
     <div className="video-box">
       <div className="video-grid">
-        <div className="participant">Участник 1</div>
-        <div className="participant">Участник 2</div>
+        <div className="participant">Робот 1</div>
+        <div className="participant">Робот 2</div>
+        <div className="participant">Робот 3</div>
+        <div className="participant">Робот 4</div>
       </div>
       <div className="controls">
         <button onClick={() => setIsCameraOn(!isCameraOn)}>
