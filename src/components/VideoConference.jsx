@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function VideoConference() {
   const [isCameraOn, setIsCameraOn] = useState(true);
@@ -7,10 +8,18 @@ function VideoConference() {
   return (
     <div className="video-box">
       <div className="video-grid">
-        <div className="participant">Робот 1</div>
-        <div className="participant">Робот 2</div>
-        <div className="participant">Робот 3</div>
-        <div className="participant">Робот 4</div>
+        <Link to="/robot/robot1" className="participant">
+          <div className="participant-label">Робот 1</div>
+        </Link>
+        <Link to="/robot/robot2" className="participant">
+          <div className="participant-label">Робот 2</div>
+        </Link>
+        <Link to="/robot/robot3" className="participant">
+          <div className="participant-label">Робот 3</div>
+        </Link>
+        <Link to="/robot/robot4" className="participant">
+          <div className="participant-label">Робот 4</div>
+        </Link>
       </div>
       <div className="controls">
         <button onClick={() => setIsCameraOn(!isCameraOn)}>
