@@ -14,6 +14,9 @@ function App() {
           <Routes>
             <Route path="/" element={
               <div className="video-section">
+                <span className="app-description">
+                  Система видеоконференц-присутствия для управления роботами: мониторинг в реальном времени, видеопотоки с роботов, интуитивное управление задачами и настройками через веб-интерфейс.
+                </span>
                 <h2>Видеоконференция</h2>
                 <VideoConference />
               </div> }/>

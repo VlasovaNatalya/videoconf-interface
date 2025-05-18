@@ -1,8 +1,8 @@
 /* Глобальные стили */
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 300;
   color: rgba(255, 255, 255, 0.87);
   background-color: #2f2f2f;
 }
@@ -21,7 +21,7 @@ h1 {
 
 h2 {
   font-size: 1.5em;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 a {
@@ -40,7 +40,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #a7af96;
+  background-color: #6b7459;
   cursor: pointer;
 }
 button:hover {
@@ -48,7 +48,7 @@ button:hover {
 }
 button:focus,
 button:focus-visible {
-  outline: 3px solid #a7af96;
+  outline: 2px solid #a7af96;
 }
 
 /* Стили компонентов */
@@ -61,9 +61,11 @@ button:focus-visible {
 }
 
 header {
-  background-color: #2f2f2f;
+  background-color: #444;
   padding: 20px 0;
-  min-width: 1400px;
+  min-width: 320px; 
+  max-width: 1400px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -74,12 +76,14 @@ header {
   font-size: 30px;
   text-align: left;
   padding-left: 40px;
+  margin-top: 10px;
 }
 
 .header-nav {
   display: flex;
   justify-content: flex-end;
   padding-right: 40px;
+  margin-top: 10px;
 }
 
 .header-list {
@@ -96,16 +100,23 @@ header {
 .header-list-item a {
   color: white;
   font-size: 20px;
+  outline: 1px solid #a7af96;
+  border-radius: 20px;
+  padding: 8px 15px
 }
 
-.header-list-item a:hover {
-  color: #6b7459;
+.header-list-item a:hover,
+a:focus{
+  outline: 1px solid #a7af96;
+  background-color: #6b7459;
 }
 
 .main-content {
   display: flex;
   flex: 1;
-  min-width: 1400px;
+  min-width: 320px;
+  max-width: 1400px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -115,6 +126,26 @@ header {
   padding-top: 0px;
   background-color: #2f2f2f;
   justify-content: center;
+  width: 100%;
+}
+
+.app-description {
+  display: block;
+  margin-top: 30px;
+  font-size: 1.1em;
+  color: #ffffff;
+  background-color: #2e2e2e;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  outline: 1px solid #a7af96;
+  border-radius: 20px;
+  padding: 15px;
+  /* max-width: 500px; */
+}
+
+.video-section h2 {
+  text-align: center;
+  margin-top: 30px;
 }
 
 .side-panel {
@@ -123,10 +154,9 @@ header {
   background-color: #2f2f2f;
 }
 
-.video-box,
-.control-box {
+.video-box {
   background-color: #444;
-  border-radius: 8px;
+  border-radius: 30px;
   padding: 20px;
   text-align: center;
   margin-top: 10px;
@@ -141,49 +171,70 @@ header {
 
 .video-box .participant {
   background-color: #666;
-  border-radius: 8px;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   position: relative;
   cursor: pointer;
 }
 
-.video-box .participant:hover {
-  outline: 3px solid #a7af96;
+.video-box .participant:hover,
+.participant:focus{
+  outline: 2px solid #a7af96;
 }
 
 .video-box .participant-label {
-  background-color: rgba(0, 0, 0, 0.5);
   color: white;
-  padding: 5px 0;
   text-align: center;
   width: 100%;
   position: absolute;
-  top: 0;
-  left: 0;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
   font-size: 1.2em;
 }
 
+.video-box .label-name {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: block;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 5px 0;
+}
+
+.video-box .status-indicators {
+  width: 190px;
+  font-size: 0.8em;
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  text-align: left;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.video-box .status-indicators span {
+  display: block;
+  margin: 2px 0;
+}
+
 .video-box .controls {
-  margin-top: 20px;
+  margin-top: 30px;
   display: flex;
-  gap: 10px;
+  gap: 15px;
   justify-content: center;
+  margin-left: 25px;
 }
 
 .video-box .controls button {
   padding: 10px 20px;
-  background-color: #a7af96; 
   border: none;
-  border-radius: 5px;
+  border-radius: 15px;
   color: white;
   cursor: pointer;
 }
 
 .video-box .controls button:hover {
-  background-color: #6b7459; 
+  background-color: #565c4b; 
 }
 
 /* .control-box .control-buttons {
@@ -210,6 +261,8 @@ footer {
   background-color: #2f2f2f;
   padding: 10px 0;
   text-align: center;
-  min-width: 1400px;
+  min-width: 320px; 
+  max-width: 1400px;
+  width: 100%;
   margin: 0 auto;
 }
