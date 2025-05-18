@@ -1,6 +1,6 @@
 import VideoConference from "./components/VideoConference";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-// import RobotControl from "./components/RobotControl";
+import AboutPage from "./components/AboutUs";
 import "./App.css";
 import Header from "./components/Header";
 import RobotPage from "./components/RobotPage"; // компонент для страницы робота(от Насти)
@@ -21,6 +21,7 @@ function App() {
                 <VideoConference />
               </div> }/>
             <Route path="/robot/:robotId" element={<RobotPage />} />
+            <Route path="/about" element={<AboutPage />} />
           </Routes>
         </div>
         <footer>
