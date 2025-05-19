@@ -13,12 +13,12 @@ function AboutPage() {
         <h2>Наша команда</h2>
         <div className="team-grid">
           <div className="team-member">
-            <div className="member-avatar"></div>
+            <img src='/photo-me.jpg' alt="Власова Наталья" className="member-avatar" />
             <h3>Власова Наталья</h3>
             <p>Разработка веб-интерфейса</p>
           </div>
           <div className="team-member">
-            <div className="member-avatar"></div>
+            <img src='/photo-nastya.jpg' alt="Санина Анастасия" className="member-avatar" />
             <h3>Санина Анастасия</h3>
             <p>Разработка компонента управления роботом</p>
           </div>

@@ -237,26 +237,6 @@ a:focus{
   background-color: #565c4b; 
 }
 
-/* .control-box .control-buttons {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  margin-top: 10px;
-}
-
-.control-box .control-buttons button {
-  padding: 10px;
-  background-color: #a7af96; 
-  border: none;
-  border-radius: 5px;
-  color: white;
-  cursor: pointer; 
-}
-
-.control-box .control-buttons button:hover {
-  background-color: #6b7459; 
-} */
-
 .about-page {
   flex: 1;
   padding: 40px;
@@ -295,7 +275,6 @@ a:focus{
 }
 
 .team-member {
-  /* background-color: #444; */
   padding: 20px;
   border-radius: 20px;
   text-align: center;
@@ -305,9 +284,9 @@ a:focus{
 .team-member .member-avatar {
   width: 100px;
   height: 100px;
-  background-color: #666;
   border-radius: 50%;
   margin: 0 auto 10px auto;
+  object-fit: cover;
 }
 
 .team-member h3 {
