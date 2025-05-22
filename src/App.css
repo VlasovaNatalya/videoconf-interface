@@ -140,7 +140,6 @@ a:focus{
   outline: 1px solid #a7af96;
   border-radius: 20px;
   padding: 15px;
-  /* max-width: 500px; */
 }
 
 .video-section h2 {
@@ -335,3 +334,144 @@ footer {
   width: 100%;
   margin: 0 auto;
 }
+
+/* Стили от Насти */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main-container{
+  min-width: 320px;
+  max-width: 1400px;
+  width: 100%;
+  height: 100%;
+  background-color: #e7e4df;
+}
+
+.page-container{
+  font-family: 'IBM Plex Mono', monospace;
+  margin: auto;
+  font-weight: 400;
+  background-color: #424141;
+  height: 1300px;
+  min-width: 320px;
+  max-width: 1400px;
+  width: 100%;
+}
+
+.title{
+  margin: 0;
+  color: #e7e4df;
+  font-weight: normal;
+  padding: 40px;
+}
+
+.border-screen{
+  margin: auto;
+  width: 600px;
+  height: 450px;
+  background-color: #e7e4df;
+  border: 20px solid #e7e4df;        
+  box-sizing: border-box;      
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 20px 0;
+  padding-bottom: 0;
+  border-radius: 10px;
+  margin-bottom: 20x;
+   
+}
+
+.expanded-border{
+  border-color: #e7e4df;
+  width: 800px;
+  height: 600px;
+  padding: 0px;
+}
+
+.camera-screen{
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  border-radius: 10px;
+}
+
+.video-block{
+  width: 560px;
+  height: 340px;
+  border-radius: 20px;
+}
+
+.expanded{
+  width:700px;
+  height:500px;
+}
+
+.button-container{
+  margin-top: 10px;
+}
+
+.extension-button{
+  border: none;
+  background-color: #e7e4df;
+  padding: 5px 10px;
+  border: 2px solid #a7af96;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+.extension-button:hover{
+  background-color: #a7af96;
+}
+
+.extension-button:active{
+  color: #e7e4df;
+}
+
+.button-img{
+  margin-left: 5px;
+
+}
+
+.controller{
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  gap: 10px;
+}
+.controller-row {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.controller-button {
+  width: 60px;
+  height: 60px;
+  background-color: #424141;
+  border: 2px solid #a7af96;
+  cursor: pointer;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow-forward { transform: rotate(0deg); }    
+.arrow-right  { transform: rotate(90deg); }     
+.arrow-back   { transform: rotate(180deg); }    
+.arrow-left   { transform: rotate(-90deg); } 
